@@ -79,11 +79,11 @@ if(window.innerWidth < 991){
     $(this).parent(".dropdown").toggleClass("active");
   });
 }
-$(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-    if (scroll >= 41) {
-        $(".mainHeader").addClass("fixedHeader");
-    }else{
-    	$(".mainHeader").removeClass("fixedHeader");
-    }
-});
+// $(window).scroll(function() {    
+//     var scroll = $(window).scrollTop();
+//     if (scroll >= 41) {
+//         $(".mainHeader").addClass("fixedHeader");
+//     }else{
+//     	$(".mainHeader").removeClass("fixedHeader");
+//     }
+// });

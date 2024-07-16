@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Bhumantra Explore</title>
+<link href= 
+'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css'
+          rel='stylesheet'>
+<!-- Bootstrap CSS  -->
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<!-- Our Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+<!-- Media Queries CSS -->
+<link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+	<header class="mainHeader">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
+			<div class="container-fluid">
+			  <a class="navbar-brand p-0" href="index.html"><img src="images/logo.png" /></a>
+			  <!-- <button class="navbar-toggler">
+			    <i class="fas fa-bars"></i>
+			  </button>
+			  <div class="overLay"></div>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  	<div class="d-flex justify-content-end">
+				  	<button class="hidden-xs mobile cross-toggler">
+				    	<i class="fas fa-times"></i>
+				  	</button>
+				  </div>
+			    <ul class="navbar-nav m-auto">
+					<li class="nav-item mobile">
+						<a class="nav-link" href="#"><img src="images/logo.png" /></a>
+					</li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Dashboard</a>
+			      </li>
+				  <li class="nav-item">
+			        <a class="nav-link" href="#">Explore</a>
+			      </li>
+				  <li class="nav-item">
+			        <a class="nav-link" href="#">Profile</a>
+			      </li>
+				  <li class="nav-item">
+			        <a class="nav-link" href="#">Chat</a>
+			      </li>
+				  <li class="nav-item">
+			        <a class="nav-link" href="#">Settings</a>
+			      </li>
+			    </ul>
+				
+			  </div>
+			  <ul class="navbar-nav ml-auto">
+				<li class="nav-item userProfile">
+				  <div class="profileName">
+					<span>Hello</span>
+					<h4>Richard</h4>
+				  </div>
+				  <div class="profileImg">
+					<img src="images/user.png" alt="" />
+				  </div>
+				</li>
+			  </ul> -->
+		  </div>
+		</nav>
+	</header>
+	<section class="midSection">
+		<div class="container">
+			<div class="blackBtn">
+				<img src="images/back.png" alt="" /> Back
+			</div>
+			<div class="sectionFormWrp">
+				<div class="formSteps">
+					<ul>
+						<li>
+							<span class="stepCount">1</span>
+							Personal Details
+						</li>
+						<li>
+							<span class="stepCount">2</span>
+							Cultural Details
+						</li>
+						<li>
+							<span class="stepCount">3</span>
+							Professional Details
+						</li>
+						<li>
+							<span class="stepCount">4</span>
+							Education Details
+						</li>
+						<li>
+							<span class="stepCount">5</span>
+							Family Details
+						</li>
+						<li>
+							<span class="stepCount">6</span>
+							Additional Info
+						</li>
+					</ul>
+					<div class="bottomImg">
+						<img src="images/gate.png" alt="" />
+					</div>
+				</div>
+				<div class="formSection">
+					<h1>Let’s start with your Personal Details</h1>
+					<div class="row mb-4">
+						<div class="col-md-4 col-12">
+							<label>First Name  <sup>*</sup></label>
+							<input type="text" name="" class="form-control" placeholder="Enter first name" />
+						</div>
+						<div class="col-md-4 col-12">
+							<label>Middle Name</label>
+							<input type="text" name="" class="form-control" placeholder="Enter middle name " />
+						</div>
+						<div class="col-md-4 col-12">
+							<label>Last Name <sup>*</sup></label>
+							<input type="text" name="" class="form-control" placeholder="Enter last name" />
+						</div>
+					</div>
+					<div class="row mb-4">
+						<div class="col-md-6 col-12 inputWithIcon">
+							<label>Date of Birth <sup>*</sup></label>
+							<input type="text" name="" class="form-control" placeholder="DD/MM/YYYY" id="my_date_picker" />
+							<img src="images/clarity_date-line.png" alt="" class="inputIcon" />
+						</div>
+						<div class="col-md-6 col-12">
+							<label>Gender <sup>*</sup></label>
+							<ul class="listInline">
+								<li>
+									<input type="radio" id="male" class="customradio" name="gender">
+									<label for="male">Male</label>
+								</li>
+								<li>
+									<input type="radio" id="Female" class="customradio" name="gender">
+									<label for="Female">Female</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row mb-4">
+						<div class="col-md-6 col-12">
+							<label>Marital Status <sup>*</sup></label>
+							<select class="form-control">
+								<option>Select Martial Status</option>
+							</select>
+						</div>
+						<div class="col-md-6 col-12">
+							<label>Place of Birth <sup>*</sup></label>
+							<input type="text" name="" class="form-control" placeholder="Enter place of birth" />
+						</div>
+					</div>
+					<div class="border-top my-5"></div>
+					<div class="row justify-content-center">
+						<div class="col-md-3 col-12">
+							<button class="lineBtn full-width">Cancel</button>
+						</div>
+						<div class="col-md-3 col-12">
+							<button class="orangeBtn full-width">Proceed</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/local.js"></script>
+<script src= 
+"https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" > 
+    </script>
+<script>
+	$(document).ready(function () {
+
+		$(function () {
+			$("#my_date_picker").
+			datepicker();
+		});
+	}) 
+</script>
+</body>
+
+</html>
