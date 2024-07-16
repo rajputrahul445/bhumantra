@@ -156,6 +156,34 @@
     .formContent h3 {
         font-size: 24px;
     }
+    .sectionFormWrp {
+        flex-wrap: wrap;
+    }
+    
+    .formSteps ul {display: flex;max-width: 100%;}
+    
+    .bottomImg {
+        display: none;
+    }
+    
+    .formSteps {
+        min-width: 100%;
+        padding: 10px;
+    }
+    .formSteps ul li{
+        padding: 0 10px;
+    }
+    .stepName{
+        display: none;
+    }
+    .formSteps ul li:after {
+        width: 20px;
+        height: 1px;
+        position: absolute;
+        left: -10px;
+        top: 15px;
+        background: #F0F0F0;
+    }
 
 }
 @media only screen and (max-width: 767px) {

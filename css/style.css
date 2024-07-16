@@ -199,12 +199,17 @@ html {
 .full-width{
     width: 100%;
 }
-.orangeBtn {
+.orangeBtn, .lineBtn {
     padding: 10px;
     background: #ED7B3B;
     border: none;
     color: #fff;
     border-radius: 5px;
+}
+.lineBtn{
+    border: solid 1px #898691;
+    color: #898691;
+    background: transparent;
 }
 .logoImg {
     display: block;
@@ -234,6 +239,40 @@ html {
     display: flex;
     gap: 20px;
     text-align: center;
+}
+.inputGroup input {
+    font-size: 28px;
+    text-align: center;
+}
+.customradio {
+    display: none;
+}
+
+.customradio + label:after {
+    width: 16px;
+    height: 16px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    border-radius: 50%;
+    border: solid 2px #ED7B3B;
+}
+
+.customradio + label {
+    position: relative;
+    padding-left: 20px;
+}
+
+.customradio:checked + label:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 3px;
+    top: 6px;
+    background: #ED7B3B;
+    border-radius: 50%;
 }
 .resend {
     text-align: right;
@@ -308,11 +347,23 @@ html {
     height: 30px;
     position: absolute;
     left: 14px;
-    bottom: -15px;
+    top: -15px;
     background: #F0F0F0;
 }
+.formSteps ul li.active .stepCount {
+    background: #FDB601;
+    color: #000;
+}
 
-.formSteps ul li:last-child:after {
+.formSteps ul li.active:after {
+    background: #FDB601;
+}
+
+.formSteps ul li.active {
+    color: #000;
+}
+
+.formSteps ul li:first-child:after {
     display: none;
 }
 .bottomImg {
