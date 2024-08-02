@@ -83,17 +83,18 @@
     .navbar-light .navbar-toggler {
         border: none;
         padding: 0;
-        color: #fff;
+        color: #000;
+        font-size: 24px;
     }
     div#navbarSupportedContent {
         position: fixed;
         top: 0;
         width: 100%;
         left: -0px;
-        background: #000;
+        background: #ED7B3B;
         height: 100vh;
         padding: 20px;
-        z-index: 9;
+        z-index: 99999;
         display: block;
         transform: translateX(-100%);
         transition: all 400ms ease;
@@ -184,6 +185,20 @@
         left: -10px;
         top: 15px;
         background: #F0F0F0;
+    }
+    .profileImgagesWrp, .profileContent ul, .cnt .tagList {
+        flex-wrap: wrap;
+    }
+    
+    .fiveCol > div {
+        width: 50%;
+    }
+    .profileDetailsSection h3 {
+        font-size: 16px;
+    }
+    
+    .cnt h4, .cnt h5 {
+        font-size: 14px;
     }
 
 }

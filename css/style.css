@@ -92,20 +92,21 @@ html {
   
   nav#mainNav .nav-item > a {
       font-size: 15px;
-      color: #C3C3C3;
-      padding: 20px 6px;
+      color: #3F4254;
+      padding: 8px 13px;
       position: relative;
       font-family: 'Plus Jakarta Sans';
-      text-transform: uppercase;
-      
+      border: solid 1px transparent;
+      border-radius: 10px;
   }
 
   nav#mainNav .nav-item > a:hover {
-      color: #C675AA;
+      color: #ED7B3B;
+      border: solid 1px #ED7B3B;
   }
 
   nav#mainNav .nav-item {
-      padding: 0 15px;
+      padding: 0 10px;
       display: flex;
       align-items: center;
   }
@@ -131,7 +132,27 @@ html {
   nav#mainNav .nav-item:hover i{
       opacity: 1;
   }
+  .userProfile {}
 
+  .profileName {
+      text-align: right;
+      padding-right: 15px;
+  }
+  
+  .profileName span {
+      font-size: 12px;
+      color: #A1A5B7;
+  }
+  
+  .profileName h4 {
+      font-size: 13px;
+      color: #000000;
+  }
+  
+  .profileImg img {
+      width: 32px;
+      border-radius: 5px;
+  }
 
 
 
@@ -197,9 +218,9 @@ html {
 }
 
 .full-width{
-    width: 100%;
+    width: 100% !important;
 }
-.orangeBtn, .lineBtn {
+.orangeBtn, .lineBtn, .greyBtn {
     padding: 10px;
     background: #ED7B3B;
     border: none;
@@ -210,6 +231,10 @@ html {
     border: solid 1px #898691;
     color: #898691;
     background: transparent;
+}
+.greyBtn{
+    background: #515B6F;
+    color: #fff;
 }
 .logoImg {
     display: block;
@@ -244,11 +269,11 @@ html {
     font-size: 28px;
     text-align: center;
 }
-.customradio {
+.customradio, .customCheckbox {
     display: none;
 }
 
-.customradio + label:after {
+.customradio + label:after, .customCheckbox + label:after{
     width: 16px;
     height: 16px;
     content: "";
@@ -258,13 +283,21 @@ html {
     border-radius: 50%;
     border: solid 2px #ED7B3B;
 }
-
-.customradio + label {
+.customCheckbox + label:after{
+    width: 19px;
+    height: 19px;
+    border-radius: 4px;
+    border-color: #515B6F;
+}
+.customradio + label, .customCheckbox + label {
     position: relative;
     padding-left: 20px;
 }
-
-.customradio:checked + label:before {
+.customCheckbox + label{
+    padding-left: 25px;
+    color: #1D183E !important;
+}
+.customradio:checked + label:before, .customCheckbox:checked + label:before {
     content: "";
     width: 10px;
     height: 10px;
@@ -273,6 +306,17 @@ html {
     top: 6px;
     background: #ED7B3B;
     border-radius: 50%;
+}
+.customCheckbox:checked + label:before{
+    background: #515B6F;
+    width: 19px;
+    height: 19px;
+    left: 0;
+    border-radius: 4px;
+    top: 3px;
+}
+.customCheckbox:checked + label:after{
+    background: url(../images/tick.png) center center no-repeat;
 }
 .resend {
     text-align: right;
@@ -370,6 +414,25 @@ html {
     padding: 50px 10px 0;
 }
 
+section.inrbanner h1 {
+    color: #fff;
+    font-size: 28px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+}
+
+section.inrbanner {
+    position: relative;
+}
+
+section.inrbanner img {
+    height: 150px;
+    object-fit: cover;
+}
 .bottomImg img {
     width: 100%;
 }
@@ -404,11 +467,209 @@ html {
 }
 
 
+.filterSec {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.filterSec h2 {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+}
 
+.filterSec .form-control {
+    color: #8C8C8C;
+    font-size: 16px;
+}
 
+.filterSec label, .filterSec h3 {
+    font-size: 16px;
+    color: #515B6F;
+}
+.profileBx {
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+}
 
+.profileBxDetails h3 {
+    font-size: 20px;
+    color: #212529;
+    font-weight: 600;
+    margin: 10px 0;
+}
 
+.tagList {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 6px;
+}
 
+.tagList li {
+    background: #EAEAEA;
+    font-size: 11px;
+    padding: 4px 5px;
+    border-radius: 3px;
+}
+.profileBx .lineBtn, .profileBx .orangeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.profileBxImg img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.breadcrum h1 {
+    font-size: 20px;
+    color: #181C32;
+}
+
+.breadcrum .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.breadcrum p {
+    color: #515B6F;
+    font-size: 13px;
+}
+
+.breadcrum p a {
+    color: #B5B5C3;
+}
+.profileDetailsWrp {
+    padding: 20px;
+    background: #FFFAF4;
+    border-radius: 8px;
+}
+
+.centerLogo img {
+    width: 52px;
+}
+
+.centerLogo h3 {
+    font-size: 24px;
+    color: #1D1B20;
+}
+
+.centerLogo {
+    margin: 0 0 20px;
+}
+
+.profileImgagesWrp {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.largeThumb {
+    min-width: 300px;
+    /* width: 30%; */
+}
+
+.profileContent {
+    width: 100%;
+    min-width: 70%;
+}
+
+.largeThumb img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.profileContent h2 {
+    font-size: 28px;
+    color: #262626;
+    font-weight: 600;
+    margin: 0 0 15px;
+}
+
+.profileContent ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.profileContent ul span {
+    color: #ED7B3B;
+}
+
+.profileContent ul li {
+    font-size: 18px;
+}
+
+.profileContent h3 {
+    font-size: 18px;
+    color: #262626;
+    font-weight: 600;
+    margin: 0 0 15px;
+}
+
+.smallThumb img {
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.profileDetailsSection h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: #ED7B3B;
+    font-weight: 500;
+    margin: 0 0 15px;
+}
+
+.profileDetailsSection {
+    margin: 0 0 30px;
+}
+
+.fiveCol {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fiveCol > div {
+    width: calc(100% / 5);
+    margin: 0 0 20px;
+}
+
+.cnt h4 {
+    font-size: 16px;
+    color: #787689;
+    font-weight: 400;
+}
+
+.cnt h5 {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+}
+.cnt .tagList li {
+    color: #1F1D1D;
+    background: #ED7B3B33;
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 5px 15px;
+}
+
+.cnt .tagList {
+    gap: 10px;
+}
+.smallThumbWrp{
+    flex-wrap: wrap;
+}
 
 
 
